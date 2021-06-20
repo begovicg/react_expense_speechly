@@ -16,6 +16,7 @@ const Main = () => {
                     {/* TODO: insert InfoCard subcomponent */}
                 </Typography>
                 <Divider/>
+                {/* TODO: insert Form subcomponent */}
             </CardContent>
             <CardContent className={classes.cartContent}>
                 <Grid container spacing={2}>
