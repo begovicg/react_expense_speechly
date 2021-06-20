@@ -1,6 +1,8 @@
 import React from 'react';
 import {Card, CardHeader, CardContent, Typography, Grid, Divider } from '@material-ui/core';
 
+import Form from './Form/Form';
+
 import useStyles from './styles';
 
 const Main = () => {
@@ -16,7 +18,7 @@ const Main = () => {
                     {/* TODO: insert InfoCard subcomponent */}
                 </Typography>
                 <Divider/>
-                {/* TODO: insert Form subcomponent */}
+                <Form />
             </CardContent>
             <CardContent className={classes.cartContent}>
                 <Grid container spacing={2}>
