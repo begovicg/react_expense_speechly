@@ -8,7 +8,9 @@ const List = () => {
 
     const classes = useStyles();
 
-    const transactions = [];
+    const transactions = [
+        { id: '1', type: 'Income', category: 'Salary', amount: 50, date: new Date() }
+    ];
 
     return (
         <MUIList dense={false} className={classes.list}>
@@ -22,7 +24,7 @@ const List = () => {
                     </ListItemAvatar>
                     <ListItemText primary={transaction.category} secondary={`$${transaction.amount} - ${transaction.date}`} />
                     <ListItemSecondaryAction>
-                    <IconButton edge="end" aria-label="delete" onClick={() => deleteTransaction(transaction.id)}>
+                    <IconButton edge="end" aria-label="delete">
                         <Delete />
                     </IconButton>
                     </ListItemSecondaryAction>
